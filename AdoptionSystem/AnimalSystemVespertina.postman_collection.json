@@ -1,0 +1,681 @@
+{
+	"info": {
+		"_postman_id": "e25deb37-e760-452d-90f2-113b65ecb0a5",
+		"name": "AnimalSystemVespertina",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "37956952"
+	},
+	"item": [
+		{
+			"name": "Animal",
+			"item": [
+				{
+					"name": "getAnimal",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:2636/api/animals",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "2636",
+							"path": [
+								"api",
+								"animals"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "addAnimal",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "name",
+									"value": "Cookie1",
+									"type": "text"
+								},
+								{
+									"key": "description",
+									"value": "Shitzu Prapso",
+									"type": "text"
+								},
+								{
+									"key": "age",
+									"value": "1",
+									"type": "text"
+								},
+								{
+									"key": "type",
+									"value": "Dog",
+									"type": "text"
+								},
+								{
+									"key": "keeper",
+									"value": "67a68c20e307a925238f8255",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://localhost:2636/api/animals",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "2636",
+							"path": [
+								"api",
+								"animals"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "getIdAnimal",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "name",
+									"value": "",
+									"type": "text"
+								},
+								{
+									"key": "description",
+									"value": "",
+									"type": "text"
+								},
+								{
+									"key": "age",
+									"value": "",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://localhost:2636/api/animals/67a6836eff16dad7e23574a5",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "2636",
+							"path": [
+								"api",
+								"animals",
+								"67a6836eff16dad7e23574a5"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "updateAnimal",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "name",
+									"value": "Perlita",
+									"type": "text"
+								},
+								{
+									"key": "description",
+									"value": "French small",
+									"type": "text"
+								},
+								{
+									"key": "age",
+									"value": "14",
+									"type": "text"
+								},
+								{
+									"key": "type",
+									"value": "Dog",
+									"type": "text"
+								},
+								{
+									"key": "keeper",
+									"value": "67a68fe6937ac7b1d0cb172d",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://localhost:2636/api/animals/67a6ed7fe91ec1000aafe330",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "2636",
+							"path": [
+								"api",
+								"animals",
+								"67a6ed7fe91ec1000aafe330"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "deleteAnimal",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "name",
+									"value": "",
+									"type": "text"
+								},
+								{
+									"key": "description",
+									"value": "",
+									"type": "text"
+								},
+								{
+									"key": "age",
+									"value": "",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://localhost:2636/api/",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "2636",
+							"path": [
+								"api",
+								""
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "User",
+			"item": [
+				{
+					"name": "getUser",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "name",
+									"value": "",
+									"type": "text"
+								},
+								{
+									"key": "surname",
+									"value": "",
+									"type": "text"
+								},
+								{
+									"key": "username",
+									"value": "",
+									"type": "text"
+								},
+								{
+									"key": "email",
+									"value": "",
+									"type": "text"
+								},
+								{
+									"key": "password",
+									"value": "",
+									"type": "text"
+								},
+								{
+									"key": "profilePicture",
+									"value": "",
+									"type": "text"
+								},
+								{
+									"key": "phone",
+									"value": "",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://localhost:2636/api/users",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "2636",
+							"path": [
+								"api",
+								"users"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "addUser",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "name",
+									"value": "pruebas1",
+									"type": "text"
+								},
+								{
+									"key": "surname",
+									"value": "pruebas01",
+									"type": "text"
+								},
+								{
+									"key": "username",
+									"value": "pruebas03",
+									"type": "text"
+								},
+								{
+									"key": "email",
+									"value": "pruebas-0003@kinal.edu.gt",
+									"type": "text"
+								},
+								{
+									"key": "password",
+									"value": "12345678Aa!",
+									"type": "text"
+								},
+								{
+									"key": "phone",
+									"value": "5555-5555",
+									"type": "text"
+								},
+								{
+									"key": "profilePicture",
+									"type": "file",
+									"src": "/C:/Users/Informatica/Desktop/IN6AV/Pinula 2.png"
+								},
+								{
+									"key": "role",
+									"value": "ADMIN",
+									"type": "text",
+									"disabled": true
+								}
+							]
+						},
+						"url": {
+							"raw": "http://localhost:2636/api/users",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "2636",
+							"path": [
+								"api",
+								"users"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "getIdUser",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "name",
+									"value": "",
+									"type": "text"
+								},
+								{
+									"key": "description",
+									"value": "",
+									"type": "text"
+								},
+								{
+									"key": "age",
+									"value": "",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://localhost:2636/api/users/67a6e4ffccc0a4c27a13fbcf",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "2636",
+							"path": [
+								"api",
+								"users",
+								"67a6e4ffccc0a4c27a13fbcf"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "updateUser",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2N2E2ZTc0YmU5NDFhMWNlYzViYTU3YjMiLCJ1c2VybmFtZSI6ImFvbGl2YTEyIiwibmFtZSI6ImFuZHJlcyIsInJvbGUiOiJDTElFTlQiLCJpYXQiOjE3Mzg5OTE1NTYsImV4cCI6MTczOTAwMjM1Nn0.VVw160-iyasngvbkXiqhQFEJDF7MCc_KeNYx3Bxi7TQ",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "name",
+									"value": "prueba",
+									"type": "text"
+								},
+								{
+									"key": "surname",
+									"value": "update",
+									"type": "text"
+								},
+								{
+									"key": "username",
+									"value": "dchupina",
+									"type": "text"
+								},
+								{
+									"key": "email",
+									"value": "aoliva-00011@kinal.edu.gt",
+									"type": "text"
+								},
+								{
+									"key": "password",
+									"value": "12345678Aa!",
+									"type": "text",
+									"disabled": true
+								},
+								{
+									"key": "phone",
+									"value": "5555-5554",
+									"type": "text"
+								},
+								{
+									"key": "profilePicture",
+									"type": "file",
+									"src": "/C:/Users/Informatica/Desktop/IN6AV/Pinula 2.png",
+									"disabled": true
+								}
+							]
+						},
+						"url": {
+							"raw": "http://localhost:2636/api/users/67a6e4e5ccc0a4c27a13fbc5",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "2636",
+							"path": [
+								"api",
+								"users",
+								"67a6e4e5ccc0a4c27a13fbc5"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "deleteUser",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:2636/",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "2636",
+							"path": [
+								""
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Login",
+			"item": [
+				{
+					"name": "Register",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "name",
+									"value": "andres",
+									"type": "text"
+								},
+								{
+									"key": "surname",
+									"value": "oliva",
+									"type": "text"
+								},
+								{
+									"key": "username",
+									"value": "aoliva1",
+									"type": "text"
+								},
+								{
+									"key": "email",
+									"value": "aoliva-1@kinal.org.gt",
+									"type": "text"
+								},
+								{
+									"key": "password",
+									"value": "12345678Aa!",
+									"type": "text"
+								},
+								{
+									"key": "phone",
+									"value": "5555-5555",
+									"type": "text"
+								},
+								{
+									"key": "profilePicture",
+									"type": "file",
+									"src": "/C:/IN6AV/Tecnicas/Taller/logoUsuario.png"
+								},
+								{
+									"key": "",
+									"value": "",
+									"type": "text",
+									"disabled": true
+								}
+							]
+						},
+						"url": {
+							"raw": "http://localhost:2636/api/auth/register",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "2636",
+							"path": [
+								"api",
+								"auth",
+								"register"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Login",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "userLoggin",
+									"value": "pruebas01",
+									"type": "text"
+								},
+								{
+									"key": "password",
+									"value": "12345678Aa!",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://localhost:2636/api/auth/login",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "2636",
+							"path": [
+								"api",
+								"auth",
+								"login"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Test",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true,
+						"disabledSystemHeaders": {}
+					},
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2N2E2ZWQ1OGU5MWVjMTAwMGFhZmUzMmQiLCJ1c2VybmFtZSI6ImFvbGl2YTEiLCJuYW1lIjoiYW5kcmVzIiwicm9sZSI6IkNMSUVOVCIsImlhdCI6MTczODk5Mjk5MiwiZXhwIjoxNzM5MDAzNzkyfQ.KixPs_I_JrYpgmSPhiZ_y08LeNbwhMyxme9dApxARpM",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": []
+						},
+						"url": {
+							"raw": "http://localhost:2636/api/auth/test/",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "2636",
+							"path": [
+								"api",
+								"auth",
+								"test",
+								""
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Appointments",
+			"item": [
+				{
+					"name": "New Request",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "date",
+									"value": "2024/07/010",
+									"type": "text"
+								},
+								{
+									"key": "keeper",
+									"value": "67a6ed58e91ec1000aafe32d",
+									"type": "text"
+								},
+								{
+									"key": "animal",
+									"value": "67a6ed7fe91ec1000aafe330",
+									"type": "text"
+								},
+								{
+									"key": "status",
+									"value": "pendiente",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://localhost:2636/api/appointment/",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "2636",
+							"path": [
+								"api",
+								"appointment",
+								""
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}
